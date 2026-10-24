@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SumironaSoft 若雫社">
+  <meta name="theme-color" content="#000000">
+  <title>SumironaSoft 若雫社 — Sumivex</title>
+  <!-- 上面的是html的网页信息，不包含实际网页内容,下面的知道下一个注释都是网页的图标的资源和抓取 xuan的代码真的狗屎完了html css和js 注释，几个都不一样 -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/config.js" defer></script>
+  <script src="assets/site.js" defer></script>
+  <noscript><style>.menu-toggle{display:none!important}.desktop-nav{display:flex!important;flex-wrap:wrap}.header-inner{height:auto;min-height:88px;flex-wrap:wrap;padding-block:16px}</style></noscript>
+  <!-- 下面即为网页的内容包括ui，脑子抽的可以打开index.html从这个注释配合网页从上往下看,蠢猪xuan不写注释🐖完了 -->
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Sumivex 与 Sumirona Soft 首页"><img src="assets/logo.png" width="220" height="74" alt=""><span class="brand-wordmark" aria-hidden="true">Sumivex</span><span class="brand-partnership" aria-hidden="true"><span class="brand-multiply">×</span><img class="brand-partner-logo" src="assets/Sumirona.png" width="64" height="64" alt=""></span></a>
+    <!-- 上一行是商标；brand-wordmark 是 Logo 旁的 Sumivex 品牌字样。 -->
+    <nav class="desktop-nav" aria-label="主导航"><a href="#team">项目贡献者</a><a href="join.html">提问我们</a><a class="nav-button" href="#portfolio">作品集</a></nav>
+    <!-- 原本的命名AI味太浓，已修改 -->
+    <button class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+  </div></header>
+  <!-- 第一行黑色带商标和各种选项的主向导页，需要很多修改不符合要求，蠢猪你们不会真的是拿ai写的？？？注释都不写你那脑子能做到不混吗，还需要我来给你们查缺补漏？我在这里骂你们十万年你们都看不见的话是不是就是说明你们压根就不看我代码直接ai套的？？ -->
+  <main id="main">
+    <section class="hero hero-gallery" id="home" aria-labelledby="hero-title">
+      <!-- 首页主视觉固定展示 mainpage (3)。 -->
+      <div class="hero-slides" aria-hidden="true">
+        <img class="hero-slide is-active" src="assets/mainpage (3).jpg" width="1920" height="1080" alt="" fetchpriority="high">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-copy hero-copy-overlay stack">
+        <!-- 欢迎语：首屏左下角的主标题。 -->
+        <h1 id="hero-title">SumironaSoft若雫社</h1>
+        <!-- 解释语：首屏左下角、欢迎语下方的简介。 -->
+        <p class="hero-intro">敬请期待我们的Galgame和视觉小说！</p>
+        <div class="hero-actions">
+          <a class="button hero-cta" href="#portfolio">作品集</a>
+          <button class="button button-soft" id="music-toggle" type="button" aria-pressed="false" aria-describedby="music-status">♫ 开启音乐</button>
+        </div>
+        <p class="music-status" id="music-status" role="status" aria-live="polite" hidden></p>
+          <audio id="site-music" loop preload="auto"></audio>
+      </div>
+    </section>
+    <section class="portfolio mint" id="portfolio" aria-labelledby="portfolio-title"><div class="container portfolio-content">
+      <p class="eyebrow">PORTFOLIO / 作品集</p>
+      <h2 id="portfolio-title">作品集</h2>
+      <div class="project-cards">
+        <article class="project-card stack" aria-labelledby="travel-project-name">
+          <div class="project-image-placeholder" role="img" aria-label="项目图片暂缺"></div>
+          <h3 id="travel-project-name">海外旅行 プラムトラベル</h3>
+          <p class="muted">在俩三线小城市的男主在机缘巧合下出国留学，到底能发什么故事呢？。</p>
+          <a class="button" href="join.html">了解更多</a>
+        </article>
+      </div>
+    </div></section>
+    <section class="team container" id="team" aria-labelledby="team-title">
+      <div class="team-compact">
+        <div class="team-summary"><p class="eyebrow">CONTRIBUTORS</p><h2 id="team-title">贡献人员</h2></div>
+        <div class="team-cards">
+          <article class="member-card"><img class="avatar" src="assets/sumij.png" width="96" height="96" alt="Sum1J 的头像" loading="lazy"><div><h3>Sum1J</h3><p class="member-role">站长</p></div></article>
+          <article class="member-card"><img class="avatar" src="assets/xuan.png" width="96" height="96" alt="Xuan 的头像" loading="lazy"><div><h3>Xuan</h3><p class="member-role">副站长</p></div></article>
+        </div>
+      </div>
+      <div class="team-spacer" aria-hidden="true"></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container"><p class="footer-slogan">web and server&nbsp; / &nbsp;power by Sumivex</p><p>© 2026 Sumivex.Co All rights reserved.</p></div></footer>
+  <dialog class="mobile-menu" id="mobile-menu" aria-label="手机导航菜单">
+    <div class="menu-header"><a class="brand" href="index.html" aria-label="Sumivex 与 Sumirona Soft 首页"><img src="assets/logo.png" width="168" height="56" alt=""><span class="brand-wordmark" aria-hidden="true">Sumivex</span><span class="brand-partnership" aria-hidden="true"><span class="brand-multiply">×</span><img class="brand-partner-logo" src="assets/Sumirona.png" width="64" height="64" alt=""></span></a><button class="menu-close" type="button" aria-label="关闭菜单" autofocus>×</button></div>
+    <nav class="menu-links" aria-label="手机导航"><a href="#team">关于我们 ↗</a><a href="join.html">提问我们 ↗</a><a href="#portfolio">作品集 ↗</a></nav>
+    <footer class="menu-footer"><p>SUMIVEX GROUP</p><p>© 2026 Sumivex Group. / 创意连接可能</p></footer>
+  </dialog>
+</body>
+</html>
